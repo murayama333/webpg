@@ -69,10 +69,27 @@ WebサーバとはHTMLやCSS、画像ファイルといったコンテンツを�
   + https://www.iis.net/
 
 
-## 公開フォルダ（ドキュメントルート）
+###  公開フォルダ（ドキュメントルート）
 
 Webサーバには公開フォルダと呼ばれる仕組みが用意されています。公開フォルダに配置したコンテンツ（HTMLなど）がWeb上に公開されるようになります。
 
 ![](https://s3-ap-northeast-1.amazonaws.com/itcaret/itc/img/webpg/day3/http.png)
 
 公開フォルダはドキュメントルートなどと呼ばれます。
+
+
+### （補足）ファイルとフォルダについて
+
+WindowsもMacもLinuxも、ファイルとフォルダという仕組みでデータを管理しています。
+
+Windowの場合、ファイルのパスはCドライブ（C:¥）から始まることが一般的です。
+
+```
+C:¥itcaret¥0326¥sample.html
+```
+
+MacやLinuxの場合、ファイルのパスは / から始まります。
+
+```
+/itcaret/0326/sample.html
+```

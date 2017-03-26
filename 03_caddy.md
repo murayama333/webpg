@@ -16,7 +16,7 @@ https://caddyserver.com/download
 
 ダウンロードしたZIPファイルを解凍すると次のようなフォルダが展開されるでしょう。
 
-+ caddyフォルダ
++ caddyフォルダ（caddy_darwin_amd64_customなど）
   + CHANGES.txt
   + LICENSES.txt
   + README.txt
@@ -24,7 +24,6 @@ https://caddyserver.com/download
   + init
 
 > 以降はcaddyフォルダをデスクトップ上に配置するものとします。
-
 
 上記のcaddyファイル（Windowsの場合はcaddy.exe）がサーバの起動ファイルです。caddyを起動するにはターミナル（コマンドプロンプト）を使用します。
 
@@ -69,9 +68,14 @@ http://（IPアドレス）:2015
 
 ![](https://s3-ap-northeast-1.amazonaws.com/itcaret/itc/img/webpg/day3/caddy1.png)
 
-続いて以下のHTMLファイルを作成し、sample.htmlという名前でファイルを保存します。このとき保存先のフォルダを「caddyフォルダ（ZIPを解凍したフォルダ）」としてください。
+## 公開フォルダ（ドキュメントルート）
 
-> この場合のCaddyの公開フォルダは「caddyフォルダ（ZIPを解凍したフォルダ）」となります。
+上記のとおり、Caddyを実行した場合、Caddyのデフォルトの公開フォルダは「caddyフォルダ（ZIPを解凍したフォルダ）」となります。公開フォルダにHTMLファイルを配置してみましょう。
+
+> 公開フォルダに配置したコンテンツのみ、クライアントからアクセス可能となります。
+
+以下のHTMLファイルを作成し、sample.htmlという名前でファイルを保存します。このとき保存先のフォルダを「caddyフォルダ（ZIPを解凍したフォルダ）」としてください。
+
 
 ```html
 <!DOCTYPE html>

@@ -1,6 +1,6 @@
 # Webサーバのインストール
 
-続いてWebページを配信するために、Webサーバをインストールしてみます。Webサーバ製品もいくつかありますが、ここでは世界中で最もよく利用されているApacheを利用します。
+続いてWebページを配信するために、Webサーバをインストールしてみましょう。Webサーバ製品もいくつかありますが、ここでは世界中で最もよく利用されているApacheを利用します。
 
 ## クラウドサーバを最新化
 
@@ -43,19 +43,20 @@ service apache2 stop
 Desktop上のsample.htmlをアップロードする場合は以下のように入力します。
 
 ```
-scp /Users/murayama/Desktop/sample.html root@52.79.97.23
+scp /Users/itcaret/Desktop/sample.html root@52.79.97.23:
 ```
 
-> 画像ファイルなどもアップロードできます。
+> 最後の : を忘れないようにしてください。
 
 ### Windowsユーザの場合
 
 起動中のTeraTermにアップロードしたいファイルをドラッグアンドドロップします。
 
+> SCPボタンをクリックします。
 
 ## Apacheの公開フォルダにHTMLファイルをコピー
 
-Apacheは標準で /var/www/html フォルダ上のファイルをWeb上に公開します。HTMLファイルを/var/www/htmlにコピーしましょう。
+Apacheは標準で /var/www/html フォルダを公開フォルダとします。アップロードしたHTMLファイルを/var/www/htmlフォルダ にコピーしましょう。
 
 ```
 cp /root/sample.html /var/www/html
@@ -68,7 +69,7 @@ cp /root/sample.html /var/www/html
 ブラウザを開いて、以下のURLにアクセスしてみましょう。
 
 ```
-http://52.79.xx.xx/sample.html
+http://52.79.97.xx/sample.html
 ```
 
 作成したHTMLファイルを閲覧できれば完了です。
