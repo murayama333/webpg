@@ -19,6 +19,3 @@
 + 2-3. <a href="06_linux.md">Linuxプログラミング</a>
 + 2-4. <a href="07_apache.md">Webサーバのインストール</a>
 
-
-
-ty46ga8ddm4jdnn
